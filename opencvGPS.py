@@ -1,3 +1,5 @@
+print("~Sciengit Codecell~")
+
 import serial
 import cv2
 import numpy as np
@@ -5,7 +7,7 @@ from numpy import *
 
 def main():
 	# serial connection
-	data = serial.Serial('com3', 57600)
+	data = serial.Serial('com3', 57600) # change this according to your port
 	# data streaming
 	k = data.readline()
 	print(k)
@@ -34,9 +36,8 @@ def main():
 		res_gray = cv2.cvtColor(result, cv2.COLOR_BGR2GRAY)
         
 		#cv2.imshow('result', result)
-        
-        #canny = cv2.Canny(gray, 50, 150)
-        #cv2.imshow('canny', canny)
+		#canny = cv2.Canny(gray, 50, 150)
+		#cv2.imshow('canny', canny)
         
 		########################################################################
 		_, threshold = cv2.threshold(res_gray, 0, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
