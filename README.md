@@ -12,5 +12,7 @@ Prerequisites:
 8) Run the python code
 
 If you are on Linux, MAC, or using RaspberryPi: simply clone this repo by: 
+
 'git clone https://github.com/ZainUlMustafa/PyObjectVisionLocation/'
+
 (without inverted comma)
